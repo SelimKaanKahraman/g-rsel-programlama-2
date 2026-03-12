@@ -1,0 +1,16 @@
+C:\Users\User\source\repos\SayiTahmin\bin\Debug\net8.0-windows\SayiTahmin.exe
+C:\Users\User\source\repos\SayiTahmin\bin\Debug\net8.0-windows\SayiTahmin.deps.json
+C:\Users\User\source\repos\SayiTahmin\bin\Debug\net8.0-windows\SayiTahmin.runtimeconfig.json
+C:\Users\User\source\repos\SayiTahmin\bin\Debug\net8.0-windows\SayiTahmin.dll
+C:\Users\User\source\repos\SayiTahmin\bin\Debug\net8.0-windows\SayiTahmin.pdb
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.Form1.resources
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.csproj.GenerateResource.cache
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.AssemblyInfo.cs
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.dll
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\refint\SayiTahmin.dll
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.pdb
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\SayiTahmin.genruntimeconfig.cache
+C:\Users\User\source\repos\SayiTahmin\obj\Debug\net8.0-windows\ref\SayiTahmin.dll
