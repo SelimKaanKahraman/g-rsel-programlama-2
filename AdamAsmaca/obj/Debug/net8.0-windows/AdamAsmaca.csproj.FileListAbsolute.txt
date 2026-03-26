@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.Form1.resources
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.Properties.Resources.resources
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.csproj.GenerateResource.cache
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.AssemblyInfo.cs
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\AdamAsmaca\bin\Debug\net8.0-windows\AdamAsmaca.exe
+C:\Users\User\source\repos\AdamAsmaca\bin\Debug\net8.0-windows\AdamAsmaca.deps.json
+C:\Users\User\source\repos\AdamAsmaca\bin\Debug\net8.0-windows\AdamAsmaca.runtimeconfig.json
+C:\Users\User\source\repos\AdamAsmaca\bin\Debug\net8.0-windows\AdamAsmaca.dll
+C:\Users\User\source\repos\AdamAsmaca\bin\Debug\net8.0-windows\AdamAsmaca.pdb
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.dll
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\refint\AdamAsmaca.dll
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.pdb
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\AdamAsmaca.genruntimeconfig.cache
+C:\Users\User\source\repos\AdamAsmaca\obj\Debug\net8.0-windows\ref\AdamAsmaca.dll
