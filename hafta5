@@ -1,0 +1,102 @@
+Hafta 5 
+----------------------------EN büyük en küçük not---------------------
+
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        string[] isimler = new string[5];
+
+        int[] notlar = new int[5];
+
+        int index = 0;
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            isimler[index] = textBox1.Text;
+            notlar[index] = int.Parse(textBox2.Text);
+            index++;
+            if (index == 5)
+            {
+                button1.Enabled = false;
+                textBox1.Text = string.Empty;
+                textBox1.Text = string.Empty;
+                for (int i = 0; i < 5; i++)
+                {
+                    listBox1.Items.Add(isimler[i] + "=>" + notlar[i]);
+
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+            int toplam = 0;
+
+            foreach (int i in notlar) 
+            
+            {
+            toplam+= i;
+            
+                       
+            }
+
+
+            double ort = toplam / 5;
+            label5.Text= "Ortalama ="+ort.ToString();
+
+            
+            int enb = 0;
+            string enbad = "";
+            for (int i=0; i<5; i++) 
+            {
+
+                if (notlar[i] > enb)
+                {
+                    enb = notlar[i];
+                    enbad = isimler[i];
+                }
+                    
+                        }
+            label3.Text= "En Yüksek Not ="+enb.ToString()+ "  "+ enbad+" e ait" ;
+
+            int enk = 100;
+            string enkad = "";
+            for(int i=0; i<5; i++)
+            {
+                if (notlar[i] < enk)
+                {
+                    enk = notlar[i];
+                    enkad = isimler[i];
+                }
+            }
+
+
+            label4.Text="En Düşük Not =" +enk.ToString()+ "  "+enkad+" e ait";
+        }
+    }
+}
