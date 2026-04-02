@@ -1,0 +1,251 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+------------RANDOM SAYI YAZDIRIP KAÇ TANE TEK ÇİFT VAR BULMA------------
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        int[] diziKaynak = new int[100];
+        int[] diziKopya = new int[100];
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            Random sayi = new Random();
+            for (int i = 0; i < diziKaynak.Length; i++)
+            {
+
+
+                diziKaynak[i] = sayi.Next(0, 100);
+
+            }
+            int sayac = 0;
+            while (sayac < 100)
+            {
+                listBox1.Items.Add(diziKaynak[sayac]);
+
+
+                sayac++;
+
+
+
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int sayac = 0;
+            while (sayac < 100)
+            {
+                diziKopya[sayac] = diziKaynak[sayac];
+                sayac++;
+
+
+            }
+            sayac = 0;
+            while (sayac < 100)
+            {
+                listBox2.Items.Add(diziKopya[sayac]);
+                sayac++;
+            }
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int sayac = 0;
+            int tek = 0;
+            int çift = 0;
+            while (sayac < 100)
+            {
+                if (diziKaynak[sayac] % 2 == 0)
+                    çift++;
+                sayac++;    
+
+            }
+            tek = 100 - çift;
+
+            label3.Text = "Çift : " + çift.ToString();
+            label4.Text = "Tek : " + tek.ToString();
+        }
+    }
+}
+
+
+
+
+
+
+
+-------------------------SON KODLAR-------------------------
+
+  
+  using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp2
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        int[] diziKaynak = new int[100];
+        int[] diziKopya = new int[100];
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            Random sayi = new Random();
+            for (int i = 0; i < diziKaynak.Length; i++)
+            {
+
+
+                diziKaynak[i] = sayi.Next(0, 100);
+
+            }
+            int sayac = 0;
+            while (sayac < 100)
+            {
+                listBox1.Items.Add(diziKaynak[sayac]);
+
+
+                sayac++;
+
+
+
+            }
+
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int sayac = 0;
+            while (sayac < 100)
+            {
+                diziKopya[sayac] = diziKaynak[sayac];
+                sayac++;
+
+
+            }
+            sayac = 0;
+            while (sayac < 100)
+            {
+                listBox2.Items.Add(diziKopya[sayac]);
+                sayac++;
+            }
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (diziKaynak.Length == 0)
+                return;
+            int enb = diziKaynak[0];
+            int enk = diziKaynak[0];
+                        for (int i = 1; i < diziKaynak.Length; i++)
+            {
+                if (diziKaynak[i] <enb)
+                    enb= diziKaynak[i];
+                if( diziKaynak[i] > enk)
+                    enk = diziKaynak[i];
+            }
+
+            listBox1.SelectedItem= enk;
+            listBox1.SelectedItem= enb;
+            
+
+            label3.Text = "En küçük: " + enb;
+            label4.Text = "En büyük: " + enk;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            listBox3.Items.Clear();
+
+            
+            int[] siraliDizi = new int[100];
+
+            for (int i = 0; i < diziKaynak.Length; i++)
+            {
+                siraliDizi[i] = diziKaynak[i];
+            }
+
+            
+            Array.Sort(siraliDizi);
+
+            
+            for (int i = 0; i < siraliDizi.Length; i++)
+            {
+                listBox3.Items.Add(siraliDizi[i]);
+
+                
+            }
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox4.Items.Clear();
+            listBox4.Items.Add(diziKaynak.Length);
+            listBox4.Items.Add(diziKaynak.Rank);
+            listBox4.Items.Add(diziKaynak.Max());
+            listBox4.Items.Add(diziKaynak.Min());
+            listBox4.Items.Add(diziKaynak.Sum());
+            listBox4.Items.Add(diziKaynak.Average());
+            listBox4.Items.Add(diziKaynak.First());
+            listBox4.Items.Add(diziKaynak.Last());
+
+        }
+    }
+}
+
+
