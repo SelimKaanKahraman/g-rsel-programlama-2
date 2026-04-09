@@ -46,3 +46,83 @@ namespace WindowsFormsApp2
         }
     }
 }
+
+
+---------------------------ASCII YE GÖRE SAYI BULMA-----------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp3
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           char myChar = e.KeyChar;
+            int asciiValue=(int)myChar;
+            textBox2.Text = asciiValue.ToString();
+            
+        }
+    }
+}
+
+
+-------------------------------------------------------MÜKEMMEL SAYI BULMA---------------------------------------
+
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsApp4
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+       
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int a = int.Parse(textBox1.Text);
+            int sayac = 1;
+            int toplam = 0;
+            while(sayac<a)
+            {
+
+                if (a % sayac == 0)
+                {
+                    toplam += sayac;
+                }
+                sayac++;
+            }
+
+            if (toplam==a)
+                label1.Text="Mükemmel Sayıdır";
+            else
+                label1.Text="Mükemmel Sayı değildir.";
+        }
+    }
+}
+
